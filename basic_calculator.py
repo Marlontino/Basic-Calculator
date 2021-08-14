@@ -5,11 +5,11 @@ while True:
     print("Enter '-' to subtract two numbers")
     print("Enter '*' to multiply two numbers")
     print("Enter '/' to divide two numbers")
-    print("Enter 'quit' to end the program")
+    print("Enter 'q' to end the program")
     user_input = input(": ")
 
 #Logic for expressions
-    if user_input == "quit":
+    if user_input == "q":
         break
     elif user_input == "+":
         num1 = float(input("Enter a number: "))
@@ -19,11 +19,17 @@ while True:
     elif user_input == "-":
         num1 = float(input("Enter a number: "))
         num2 = float(input("Enter another number: "))
+        result = str(num1 - num2)
+        print("The answer is " + result)
     elif user_input == "*":
         num1 = float(input("Enter a number: "))
         num2 = float(input("Enter another number: "))
+        result = str(num1 * num2)
+        print("The answer is " + result)
     elif user_input == "/":
         num1 = float(input("Enter a number: "))
         num2 = float(input("Enter another number: "))
+        result = str(num1 / num2)
+        print("The answer is " + result)
     else:
         print("Unknown input")
